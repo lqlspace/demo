@@ -1,0 +1,225 @@
+     0  *ast.File {
+     1  .  Package: test.go:1:1
+     2  .  Name: *ast.Ident {
+     3  .  .  NamePos: test.go:1:9
+     4  .  .  Name: "main"
+     5  .  }
+     6  .  Decls: []ast.Decl (len = 6) {
+     7  .  .  0: *ast.GenDecl {
+     8  .  .  .  TokPos: test.go:3:1
+     9  .  .  .  Tok: import
+    10  .  .  .  Lparen: -
+    11  .  .  .  Specs: []ast.Spec (len = 1) {
+    12  .  .  .  .  0: *ast.ImportSpec {
+    13  .  .  .  .  .  Path: *ast.BasicLit {
+    14  .  .  .  .  .  .  ValuePos: test.go:3:8
+    15  .  .  .  .  .  .  Kind: STRING
+    16  .  .  .  .  .  .  Value: "\"fmt\""
+    17  .  .  .  .  .  }
+    18  .  .  .  .  .  EndPos: -
+    19  .  .  .  .  }
+    20  .  .  .  }
+    21  .  .  .  Rparen: -
+    22  .  .  }
+    23  .  .  1: *ast.GenDecl {
+    24  .  .  .  TokPos: test.go:5:1
+    25  .  .  .  Tok: type
+    26  .  .  .  Lparen: -
+    27  .  .  .  Specs: []ast.Spec (len = 1) {
+    28  .  .  .  .  0: *ast.TypeSpec {
+    29  .  .  .  .  .  Name: *ast.Ident {
+    30  .  .  .  .  .  .  NamePos: test.go:5:6
+    31  .  .  .  .  .  .  Name: "Student"
+    32  .  .  .  .  .  .  Obj: *ast.Object {
+    33  .  .  .  .  .  .  .  Kind: type
+    34  .  .  .  .  .  .  .  Name: "Student"
+    35  .  .  .  .  .  .  .  Decl: *(obj @ 28)
+    36  .  .  .  .  .  .  }
+    37  .  .  .  .  .  }
+    38  .  .  .  .  .  Assign: -
+    39  .  .  .  .  .  Type: *ast.StructType {
+    40  .  .  .  .  .  .  Struct: test.go:5:14
+    41  .  .  .  .  .  .  Fields: *ast.FieldList {
+    42  .  .  .  .  .  .  .  Opening: test.go:5:21
+    43  .  .  .  .  .  .  .  List: []*ast.Field (len = 1) {
+    44  .  .  .  .  .  .  .  .  0: *ast.Field {
+    45  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+    46  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+    47  .  .  .  .  .  .  .  .  .  .  .  NamePos: test.go:6:2
+    48  .  .  .  .  .  .  .  .  .  .  .  Name: "Name"
+    49  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+    50  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+    51  .  .  .  .  .  .  .  .  .  .  .  .  Name: "Name"
+    52  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 44)
+    53  .  .  .  .  .  .  .  .  .  .  .  }
+    54  .  .  .  .  .  .  .  .  .  .  }
+    55  .  .  .  .  .  .  .  .  .  }
+    56  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+    57  .  .  .  .  .  .  .  .  .  .  NamePos: test.go:6:7
+    58  .  .  .  .  .  .  .  .  .  .  Name: "string"
+    59  .  .  .  .  .  .  .  .  .  }
+    60  .  .  .  .  .  .  .  .  .  Tag: *ast.BasicLit {
+    61  .  .  .  .  .  .  .  .  .  .  ValuePos: test.go:6:14
+    62  .  .  .  .  .  .  .  .  .  .  Kind: STRING
+    63  .  .  .  .  .  .  .  .  .  .  Value: "`json:\"name\"`"
+    64  .  .  .  .  .  .  .  .  .  }
+    65  .  .  .  .  .  .  .  .  }
+    66  .  .  .  .  .  .  .  }
+    67  .  .  .  .  .  .  .  Closing: test.go:7:1
+    68  .  .  .  .  .  .  }
+    69  .  .  .  .  .  .  Incomplete: false
+    70  .  .  .  .  .  }
+    71  .  .  .  .  }
+    72  .  .  .  }
+    73  .  .  .  Rparen: -
+    74  .  .  }
+    75  .  .  2: *ast.GenDecl {
+    76  .  .  .  TokPos: test.go:9:1
+    77  .  .  .  Tok: var
+    78  .  .  .  Lparen: -
+    79  .  .  .  Specs: []ast.Spec (len = 1) {
+    80  .  .  .  .  0: *ast.ValueSpec {
+    81  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+    82  .  .  .  .  .  .  0: *ast.Ident {
+    83  .  .  .  .  .  .  .  NamePos: test.go:9:5
+    84  .  .  .  .  .  .  .  Name: "stu"
+    85  .  .  .  .  .  .  .  Obj: *ast.Object {
+    86  .  .  .  .  .  .  .  .  Kind: var
+    87  .  .  .  .  .  .  .  .  Name: "stu"
+    88  .  .  .  .  .  .  .  .  Decl: *(obj @ 80)
+    89  .  .  .  .  .  .  .  .  Data: 0
+    90  .  .  .  .  .  .  .  }
+    91  .  .  .  .  .  .  }
+    92  .  .  .  .  .  }
+    93  .  .  .  .  .  Type: *ast.Ident {
+    94  .  .  .  .  .  .  NamePos: test.go:9:9
+    95  .  .  .  .  .  .  Name: "Student"
+    96  .  .  .  .  .  .  Obj: *(obj @ 32)
+    97  .  .  .  .  .  }
+    98  .  .  .  .  }
+    99  .  .  .  }
+   100  .  .  .  Rparen: -
+   101  .  .  }
+   102  .  .  3: *ast.GenDecl {
+   103  .  .  .  TokPos: test.go:11:1
+   104  .  .  .  Tok: const
+   105  .  .  .  Lparen: -
+   106  .  .  .  Specs: []ast.Spec (len = 1) {
+   107  .  .  .  .  0: *ast.ValueSpec {
+   108  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   109  .  .  .  .  .  .  0: *ast.Ident {
+   110  .  .  .  .  .  .  .  NamePos: test.go:11:7
+   111  .  .  .  .  .  .  .  Name: "c"
+   112  .  .  .  .  .  .  .  Obj: *ast.Object {
+   113  .  .  .  .  .  .  .  .  Kind: const
+   114  .  .  .  .  .  .  .  .  Name: "c"
+   115  .  .  .  .  .  .  .  .  Decl: *(obj @ 107)
+   116  .  .  .  .  .  .  .  .  Data: 0
+   117  .  .  .  .  .  .  .  }
+   118  .  .  .  .  .  .  }
+   119  .  .  .  .  .  }
+   120  .  .  .  .  .  Values: []ast.Expr (len = 1) {
+   121  .  .  .  .  .  .  0: *ast.BasicLit {
+   122  .  .  .  .  .  .  .  ValuePos: test.go:11:11
+   123  .  .  .  .  .  .  .  Kind: INT
+   124  .  .  .  .  .  .  .  Value: "1"
+   125  .  .  .  .  .  .  }
+   126  .  .  .  .  .  }
+   127  .  .  .  .  }
+   128  .  .  .  }
+   129  .  .  .  Rparen: -
+   130  .  .  }
+   131  .  .  4: *ast.GenDecl {
+   132  .  .  .  TokPos: test.go:13:1
+   133  .  .  .  Tok: type
+   134  .  .  .  Lparen: -
+   135  .  .  .  Specs: []ast.Spec (len = 1) {
+   136  .  .  .  .  0: *ast.TypeSpec {
+   137  .  .  .  .  .  Name: *ast.Ident {
+   138  .  .  .  .  .  .  NamePos: test.go:13:6
+   139  .  .  .  .  .  .  Name: "Inter"
+   140  .  .  .  .  .  .  Obj: *ast.Object {
+   141  .  .  .  .  .  .  .  Kind: type
+   142  .  .  .  .  .  .  .  Name: "Inter"
+   143  .  .  .  .  .  .  .  Decl: *(obj @ 136)
+   144  .  .  .  .  .  .  }
+   145  .  .  .  .  .  }
+   146  .  .  .  .  .  Assign: -
+   147  .  .  .  .  .  Type: *ast.InterfaceType {
+   148  .  .  .  .  .  .  Interface: test.go:13:12
+   149  .  .  .  .  .  .  Methods: *ast.FieldList {
+   150  .  .  .  .  .  .  .  Opening: test.go:13:21
+   151  .  .  .  .  .  .  .  Closing: test.go:15:1
+   152  .  .  .  .  .  .  }
+   153  .  .  .  .  .  .  Incomplete: false
+   154  .  .  .  .  .  }
+   155  .  .  .  .  }
+   156  .  .  .  }
+   157  .  .  .  Rparen: -
+   158  .  .  }
+   159  .  .  5: *ast.FuncDecl {
+   160  .  .  .  Name: *ast.Ident {
+   161  .  .  .  .  NamePos: test.go:17:6
+   162  .  .  .  .  Name: "greeter"
+   163  .  .  .  .  Obj: *ast.Object {
+   164  .  .  .  .  .  Kind: func
+   165  .  .  .  .  .  Name: "greeter"
+   166  .  .  .  .  .  Decl: *(obj @ 159)
+   167  .  .  .  .  }
+   168  .  .  .  }
+   169  .  .  .  Type: *ast.FuncType {
+   170  .  .  .  .  Func: test.go:17:1
+   171  .  .  .  .  Params: *ast.FieldList {
+   172  .  .  .  .  .  Opening: test.go:17:13
+   173  .  .  .  .  .  Closing: test.go:17:14
+   174  .  .  .  .  }
+   175  .  .  .  }
+   176  .  .  .  Body: *ast.BlockStmt {
+   177  .  .  .  .  Lbrace: test.go:17:16
+   178  .  .  .  .  List: []ast.Stmt (len = 1) {
+   179  .  .  .  .  .  0: *ast.ExprStmt {
+   180  .  .  .  .  .  .  X: *ast.CallExpr {
+   181  .  .  .  .  .  .  .  Fun: *ast.SelectorExpr {
+   182  .  .  .  .  .  .  .  .  X: *ast.Ident {
+   183  .  .  .  .  .  .  .  .  .  NamePos: test.go:18:2
+   184  .  .  .  .  .  .  .  .  .  Name: "fmt"
+   185  .  .  .  .  .  .  .  .  }
+   186  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+   187  .  .  .  .  .  .  .  .  .  NamePos: test.go:18:6
+   188  .  .  .  .  .  .  .  .  .  Name: "Println"
+   189  .  .  .  .  .  .  .  .  }
+   190  .  .  .  .  .  .  .  }
+   191  .  .  .  .  .  .  .  Lparen: test.go:18:13
+   192  .  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+   193  .  .  .  .  .  .  .  .  0: *ast.BasicLit {
+   194  .  .  .  .  .  .  .  .  .  ValuePos: test.go:18:14
+   195  .  .  .  .  .  .  .  .  .  Kind: STRING
+   196  .  .  .  .  .  .  .  .  .  Value: "\"hello, world\""
+   197  .  .  .  .  .  .  .  .  }
+   198  .  .  .  .  .  .  .  }
+   199  .  .  .  .  .  .  .  Ellipsis: -
+   200  .  .  .  .  .  .  .  Rparen: test.go:18:28
+   201  .  .  .  .  .  .  }
+   202  .  .  .  .  .  }
+   203  .  .  .  .  }
+   204  .  .  .  .  Rbrace: test.go:19:1
+   205  .  .  .  }
+   206  .  .  }
+   207  .  }
+   208  .  Scope: *ast.Scope {
+   209  .  .  Objects: map[string]*ast.Object (len = 5) {
+   210  .  .  .  "c": *(obj @ 112)
+   211  .  .  .  "Inter": *(obj @ 140)
+   212  .  .  .  "greeter": *(obj @ 163)
+   213  .  .  .  "Student": *(obj @ 32)
+   214  .  .  .  "stu": *(obj @ 85)
+   215  .  .  }
+   216  .  }
+   217  .  Imports: []*ast.ImportSpec (len = 1) {
+   218  .  .  0: *(obj @ 12)
+   219  .  }
+   220  .  Unresolved: []*ast.Ident (len = 2) {
+   221  .  .  0: *(obj @ 56)
+   222  .  .  1: *(obj @ 182)
+   223  .  }
+   224  }

@@ -1,0 +1,12 @@
+type StuRequest struct {
+    Name string `json:"name"`
+}
+
+type StuResponse struct {
+    Data string `json:"data"`
+}
+
+service student-api {
+    @handler GetStudent
+    get /api/student (StuRequest) returns (StuResponse)
+}
