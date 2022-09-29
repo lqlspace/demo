@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"sort"
 )
 
 type Student struct {
@@ -11,7 +10,6 @@ type Student struct {
 
 func (self Student) Print() {
 	fmt.Print("stu")
-	sort.IntSlice()
 }
 
 func (self *Student) PrintPointer() {
